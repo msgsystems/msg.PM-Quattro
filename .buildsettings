@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmbs:buildsettings xmlns:pmbs="http://www.msg.de/msgpm/platform/buildsettings/2009">
+  <pmbs:sourcefolders>
+    <pmbs:folder path="content"/>
+  </pmbs:sourcefolders>
+  <pmbs:outputfolders>
+    <pmbs:folder path="output/content"/>
+    <pmbs:folder path="output/java" kind="targetlanguage" language="java"/>
+    <pmbs:folder path="output/test" role="test"/>
+  </pmbs:outputfolders>
+</pmbs:buildsettings>

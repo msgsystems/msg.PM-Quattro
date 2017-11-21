@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>MotorInsurance</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>de.msg.pm.platform.workspace.ContentProjectBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>de.msg.pm.platform.workspace.StandardProjectNature</nature>
+		<nature>de.msg.pm.platform.workspace.ContentProjectNature</nature>
+	</natures>
+</projectDescription>

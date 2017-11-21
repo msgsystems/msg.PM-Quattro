@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pm:descriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0">
+  <pm:historyentries>
+    <pm:historyentry processid="1503048482874">
+      <pm:executable>
+        <pm:name>Ducato</pm:name>
+        <pm:version>1.5.3.0</pm:version>
+      </pm:executable>
+      <pm:executioncontext>
+        <pm:name>msg.PM Deployment Plug-In</pm:name>
+        <pm:version>20.0.0.qualifier</pm:version>
+      </pm:executioncontext>
+      <pm:user>leckera</pm:user>
+      <pm:timestamp>20170818 112802</pm:timestamp>
+      <pm:content version="1.0.0.0">
+        <pm:name>MotorInsurance</pm:name>
+        <pm:sources>
+          <pm:source type="contentproject-library">
+            <pm:name>MotorInsurance</pm:name>
+            <pm:location><![CDATA[file:/C:/Daten/PMQD_Branch_1.5.3.0/Development/Examples/Contents/MotorInsurance]]></pm:location>
+            <pm:properties>
+              <pm:property>
+                <pm:name>version</pm:name>
+                <pm:value>1.0.0.0</pm:value>
+              </pm:property>
+            </pm:properties>
+          </pm:source>
+        </pm:sources>
+        <pm:target dataversion="1.5.3.0">
+          <pm:properties>
+            <pm:property>
+              <pm:name>filingformat</pm:name>
+              <pm:value>NORMAL</pm:value>
+            </pm:property>
+            <pm:property>
+              <pm:name>segmentation</pm:name>
+              <pm:value>LIBRARY</pm:value>
+            </pm:property>
+          </pm:properties>
+        </pm:target>
+      </pm:content>
+      <pm:operations>
+        <pm:operation type="generate">
+          <pm:name>Java</pm:name>
+          <pm:plugin><![CDATA[de.msg.pm.deployment.generator.java.generation.JavaGenerator]]></pm:plugin>
+          <pm:parameters>
+            <pm:parameter>
+              <pm:name>bin_path</pm:name>
+              <pm:value><![CDATA[C:\Users\leckera\Workspaces\PMQD_1530\.metadata\.plugins\org.eclipse.pde.core\.bundle_pool\plugins\]]></pm:value>
+            </pm:parameter>
+          </pm:parameters>
+        </pm:operation>
+        <pm:operation type="package">
+          <pm:name>Qar</pm:name>
+          <pm:plugin><![CDATA[de.msg.pm.deployment.core.packaging.QarPackager]]></pm:plugin>
+        </pm:operation>
+        <pm:operation type="transport">
+          <pm:name>FileSystem</pm:name>
+          <pm:plugin><![CDATA[de.msg.pm.deployment.core.transport.FileSystemTransporter]]></pm:plugin>
+          <pm:parameters>
+            <pm:parameter>
+              <pm:name>target_dir</pm:name>
+              <pm:value><![CDATA[C:\Users\leckera\depl1530_neu]]></pm:value>
+            </pm:parameter>
+          </pm:parameters>
+        </pm:operation>
+      </pm:operations>
+    </pm:historyentry>
+  </pm:historyentries>
+</pm:descriptor>
